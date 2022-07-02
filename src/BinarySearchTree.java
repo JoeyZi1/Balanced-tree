@@ -94,7 +94,7 @@ public class BinarySearchTree<T extends Comparable<T>>
 
     public T getMax(Node<T> node) {
         if (node.getRightChild() != null)
-            return getMin(node.getRightChild());
+            return getMax(node.getRightChild());
         return node.getData();
     }
 
