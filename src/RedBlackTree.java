@@ -220,7 +220,7 @@ public class RedBlackTree<T extends Comparable<T>> implements Tree<T> {
 
     public T getMax(Node<T> node) {
         if (node.getRightChild() != null)
-            return getMin(node.getRightChild());
+            return getMax(node.getRightChild());
         return node.getData();
     }
 
